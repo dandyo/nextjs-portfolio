@@ -1,0 +1,59 @@
+// @import './sass/variables';
+
+body {
+    @apply bg-slate-50;
+}
+
+.container-sm {
+    max-width: 800px;
+}
+
+.title-1 {
+    @apply text-3xl font-bold mb-4
+}
+
+.post-card {
+    // color: $color-primary;
+    @apply bg-white rounded-xl shadow px-5 py-4 mb-6;
+}
+
+.post-card-wrap {
+    @apply flex;
+
+    .post-author-img {
+        width: auto;
+        flex: 0 0 auto;
+        margin-right: 16px;
+    }
+
+    .post-author {
+        @apply flex items-center mb-2;
+        gap: 12px;
+
+        h5 {
+            font-weight: 600;
+        }
+    }
+}
+
+//create-post-form
+.create-post-form {
+    @apply flex relative;
+
+    .create-post-author {
+        img {
+            max-width: 40px;
+        }
+    }
+
+    .create-post-content {
+        // @apply ms-4 shadow-slate-50 rounded-lg;
+        @apply overflow-hidden rounded-lg shadow-sm ring-1 ring-inset ring-gray-300;
+        flex: 1 1 0%;
+
+        textarea {
+            // width: 100%;
+            @apply block w-full resize-none border-0 bg-transparent py-1.5 text-gray-900;
+        }
+    }
+}
